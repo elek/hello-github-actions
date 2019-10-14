@@ -5,6 +5,7 @@ jobs:
       name: Check comments for /label
       runs-on: ubuntu-latest
       steps:
+        - uses: actions/checkout@master
         - name: Check for label
           id: command
           run: ./.github/actions/label.sh
