@@ -7,6 +7,6 @@ jobs:
       steps:
         - name: Check for label
           id: command
-          run: ./github/actions/label.sh
+          run: ./.github/actions/label.sh
           env:
               GITHUB_TOKEN:  ${{ secrets.GITHUB_TOKEN }}
