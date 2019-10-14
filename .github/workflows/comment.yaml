@@ -3,6 +3,7 @@ name: Label command
 jobs:
   check_comments:
       name: Check comments for /label
+      runs-on: ubuntu-latest
       steps:
         - name: Check for label
           id: command
